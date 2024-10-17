@@ -25,8 +25,8 @@ h2 {
 }
 
 .form-container {
-    flex: 1; /* Ocupa el 40% del espacio */
-    margin-left: 20px;
+    flex: 1; /* Ocupa un espacio flexible */
+    margin-right: 20px; /* Espacio entre formulario y tabla */
 }
 
 .employee-form {
@@ -61,12 +61,11 @@ button:hover {
 }
 
 .table-container {
-    flex: 2; /* Ocupa el 60% del espacio */
+    flex: 1; /* Ocupa un espacio flexible */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    margin-right: 20px;
 }
 
 table {
@@ -92,12 +91,12 @@ td {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         align-items: stretch;
     }
 
     .form-container, .table-container {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
     }
 }
