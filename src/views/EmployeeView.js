@@ -3,7 +3,8 @@ import EmployeeForm from './components/EmployeeForm';
 import EmployeeTable from './components/EmployeeTable';
 import EmployeeModel from '../models/EmployeeModel';
 import EmployeeController from '../controllers/EmployeeController';
-import './styles.css';
+import '../styles/styles.css';
+
 
 const EmployeeView = () => {
     const [model] = useState(new EmployeeModel());
